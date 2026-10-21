@@ -87,3 +87,10 @@ If PowerShell refuses to run the script, allow local scripts once:
 ```
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
+
+## Tests
+Run the same test cases against both scripts (PowerShell cases are skipped when PowerShell is not installed):
+```
+tests/run-tests.sh
+```
+The tests also run on GitHub Actions on Ubuntu and Windows for every push and pull request.
